@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table project</title>
+	<link rel="stylesheet" type="text/css" href="Table.css">
+	<script src="Table.js"></script>
+</head>
+<body>
+<table>
+	<tr>
+		<td>
+	<form onsubmit="event.preventDefault(); onSubmit();" autocomplete="off">
+				<div>
+				<label>Full Name<label class="validation-error hide" id="fullNameValidationError">This field is required</label></label>
+				<input type="text" id="fullname" name="fullname">
+				</div>
+				<div>
+				<label>Domain</label>
+				<input type="text" id="Domain" name="Domain">
+				</div>
+				<div>
+				<label>Company</label>
+				<input type="text" id ="Company" name="Company">
+				</div>
+				<div>
+				<label>Employee ID</label>
+				<input type="number" id ="EmployeeID" name="EmployeeID">
+				</div>
+				<div>
+			    <label>mail ID</label>
+			    <input type="email" id ="emailID" name="emailID">
+				</div>
+				<div>
+				<label>Phone</label>
+				<input type="number" id="Phone" name="Phone">
+				</div>
+				<div>
+				<label>City</label>
+				<input type="text" id="City" name="City">
+				</div>
+				<div class="form-action-buttons">
+				<input type="submit" value="submit">
+				</div>
+			</form>
+		</td>
+		<td>
+			<table class="list" id="employeeList">
+				<thead>
+				<tr>
+					<th>Full Name</th>
+					<th>Domain</th>
+					<th>Company</th>
+					<th>Employee ID</th>
+					<th>mail ID</th>
+					<th>Phone</th>
+					<th>City</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
